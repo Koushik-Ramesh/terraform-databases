@@ -8,6 +8,11 @@ module "redis" {
   ENV                  = var.ENV
 }
 
+module "mysql" {
+  source               = "./vendor/modules/mysql"
+  ENV                  = var.ENV
+}
+
 
 
 # We cannot parametrize anything that's added in the source
