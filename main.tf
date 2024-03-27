@@ -16,10 +16,6 @@ module "mysql" {
   MYSQL_INSTANCE_TYPE  = var.MYSQL_INSTANCE_TYPE
 }
 
-module "rabbitmq" {
-  source               = "./vendor/modules/rabbitmq"
-  ENV                  = var.ENV
-}
 
 
 # We cannot parametrize anything that's added in the source
