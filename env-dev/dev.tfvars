@@ -8,6 +8,7 @@ MYSQL_INSTANCE_TYPE     = "db.t3.micro"
 # DOCDB ValUEs
 DOCDB_INSTANCE_TYPE     = "db.t3.medium"
 DOCDB_INSTANCE_COUNT    = 1
+DOCDB_INSTANCE_PORT    = 27017
 
 # REDIS Values
 REDIS_INSTANCE_TYPE  = "cache.t3.small"
