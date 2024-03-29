@@ -23,9 +23,6 @@ module "mysql" {
   MYSQL_INSTANCE_TYPE  = var.MYSQL_INSTANCE_TYPE
 }
 
-output "DOCDB_USERNAME" {
-    value = jsondecode(data.aws_secretsmanager_secret_version.secret_version.secret_string)["DOCDB_USERNAME"]
-}
 
 # output "data" {
 #   value = module.docdb.DOCDB_USERNAME
